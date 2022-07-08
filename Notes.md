@@ -1,5 +1,16 @@
 # submit-data_api
 
+# Vue-2 Submit form data to API 
+#1 make a form
+#2 install axios
+npm i vue-axios axios
+#3 Get form data
+#4 Submit data to API
+#5 Test Api result
+
+https://github.com/typicode/json-server
+https://www.npmjs.com/package/vue-axios
+
 ## Project setup
 ```
 npm install

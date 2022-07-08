@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <h1>Submit form data to API</h1>
     <PostComponent />
   </div>
 </template>

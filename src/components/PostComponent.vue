@@ -10,6 +10,12 @@
 </template>
 
 <script>
+// import * as Vue from 'vue' // in Vue 3
+import Vue from 'vue'   // in Vue 2
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios) //Bind axios 3 files
 export default {
     name: "Post-component",
     data()
@@ -24,7 +30,11 @@ export default {
     },
     methods:{
         submitData(e){
-            e.preventDefault()
+            this.axios.post('http://localhost:3000/posts',this.post).then((result)=>{
+                console.log("result",result)
+            })
+            console.log(this.post)
+            e.preventDefault();
         }
     }
 }
